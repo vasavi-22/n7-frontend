@@ -7,9 +7,18 @@ type LaptopFrameProps = {
   className?: string;
   priority?: boolean;
   cutoff?: "left" | "right" | "none";
+  variant?: "thin" | "default";
 };
 
-export function LaptopFrame({ src, alt, className, priority, cutoff = "none" }: LaptopFrameProps) {
+export function LaptopFrame({
+  src,
+  alt,
+  className,
+  priority,
+  cutoff = "none",
+  variant = "default",
+}: LaptopFrameProps) {
+  const isThin = variant === "thin";
   return (
     <div
       className={clsx(
@@ -26,12 +35,23 @@ export function LaptopFrame({ src, alt, className, priority, cutoff = "none" }: 
         </div>
 
         {/* Outer “laptop” frame */}
-        <div className="relative rounded-[12px] border border-[#00B4FD]/70 bg-[#07131A] shadow-[0_30px_90px_rgba(0,0,0,0.55)]">
-          <div className="pointer-events-none absolute inset-[1px] rounded-[11px] border border-[#003ACE]/35" />
+        <div
+          className={clsx(
+            "relative bg-[#07131A] shadow-[0_30px_90px_rgba(0,0,0,0.55)]",
+            isThin ? "rounded-[16px] border border-[#00B4FD]/75" : "rounded-[12px] border border-[#00B4FD]/70",
+          )}
+          style={isThin ? { borderWidth: "1.05px" } : undefined}
+        >
+          <div
+            className={clsx(
+              "pointer-events-none absolute border border-[#003ACE]/35",
+              isThin ? "inset-[1px] rounded-[15px]" : "inset-[1px] rounded-[11px]",
+            )}
+          />
 
           {/* Screen bezel */}
-          <div className="p-[10px] sm:p-[12px]">
-            <div className="relative overflow-hidden rounded-[10px] bg-[#EAEAEA]">
+          <div className={clsx(isThin ? "p-[12px]" : "p-[10px] sm:p-[12px]")}>
+            <div className={clsx("relative overflow-hidden bg-[#EAEAEA]", isThin ? "rounded-[14px]" : "rounded-[10px]")}>
               <div className="relative aspect-[16/10] w-full">
                 <Image
                   src={src}
@@ -47,7 +67,13 @@ export function LaptopFrame({ src, alt, className, priority, cutoff = "none" }: 
         </div>
 
         {/* Laptop base bar */}
-        <div className="pointer-events-none mx-auto mt-5 h-[18px] w-[78%] rounded-full border border-[#00B4FD]/55 bg-[linear-gradient(180deg,rgba(0,180,253,0.10),rgba(0,58,206,0.06))]" />
+        <div
+          className={clsx(
+            "pointer-events-none mx-auto mt-5 rounded-full border border-[#00B4FD]/55 bg-[linear-gradient(180deg,rgba(0,180,253,0.10),rgba(0,58,206,0.06))]",
+            isThin ? "h-[16px] w-[82%]" : "h-[18px] w-[78%]",
+          )}
+          style={isThin ? { borderWidth: "1.05px" } : undefined}
+        />
       </div>
     </div>
   );

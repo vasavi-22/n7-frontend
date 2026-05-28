@@ -21,20 +21,21 @@ export function ProductShowcaseSection() {
             </p>
 
             <div className="mt-7 flex flex-col items-start gap-4">
-              <Button intent="gradient" type="button" className="h-[44px] w-[168px] rounded-[10px]">
+              <Button intent="gradient" type="button" className="h-[44px] w-[168px] rounded-[6px]">
                 Request Demo
               </Button>
-              <TextLink href="#" className="translate-y-0.5">
-                Learn More
+              <TextLink href="#" className="translate-y-0.5 text-[14px]" arrowVariant="right">
+                <span className="border-b border-[#00B4FD]/50 pb-[2px]">Learn</span>&nbsp;More
               </TextLink>
             </div>
           </div>
 
           <div className="motion-safe:fade-up [animation-delay:120ms] overflow-hidden">
             <LaptopFrame
-              src="/sections/section-3-screen.png"
+              src="/sections/laptop-aml.png"
               alt="Core banking dashboard screen"
               cutoff="right"
+              variant="thin"
             />
           </div>
         </div>

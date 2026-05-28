@@ -10,17 +10,17 @@ export function SiteHeader({ navItems }: SiteHeaderProps) {
   return (
     <header className="mt-5">
       <Container>
-        <div className="rounded-[14px] border border-white/10 bg-gradient-to-r from-white/14 to-white/8 px-4 py-3 backdrop-blur-sm sm:px-6">
+        <div className="mx-auto max-w-[1180px] rounded-[14px] border border-white/10 bg-gradient-to-r from-white/14 to-white/8 px-4 py-3 backdrop-blur-sm sm:px-6">
           <nav className="flex items-center justify-between gap-3">
             <p className="font-[var(--font-archivo)] text-[24px] leading-[1.2] font-medium text-[#E9F4F9]">
               N7
             </p>
 
-            <ul className="hidden items-center gap-9 md:flex">
+            <ul className="hidden items-center gap-5 md:flex">
               {navItems.map((item) => (
                 <li key={item}>
                   <button
-                    className="group inline-flex items-center gap-2 font-[var(--font-chivo-mono)] text-[12px] leading-[1.3] font-normal uppercase text-[#E9F4F9]/90 transition-colors hover:text-[#E9F4F9]"
+                    className="group inline-flex items-center gap-1.5 font-[var(--font-chivo-mono)] text-[12px] leading-[1.3] font-normal uppercase text-[#E9F4F9]/90 transition-colors hover:text-[#E9F4F9]"
                     type="button"
                   >
                     {item}

@@ -61,15 +61,15 @@ export function SolutionsSection({ solutions }: SolutionsSectionProps) {
                     ) : null}
                   </div>
 
-                  <h3 className="mt-3 font-[var(--font-archivo)] text-[36px] leading-[1.2] font-normal text-[#E9F4F9]">
+                  <h3 className="mt-3 font-[var(--font-archivo)] text-[22px] leading-[1.25] font-normal text-[#E9F4F9]">
                     {item.title}
                   </h3>
-                  <p className="mt-3 font-[var(--font-archivo)] text-[15px] leading-[1.3] font-normal text-[#B5C3CF]/90">
+                  <p className="mt-4 font-[var(--font-archivo)] text-[16px] leading-[1.3] font-normal text-[#B5C3CF]/90">
                     {item.description}
                   </p>
 
-                  <TextLink href="#" className="mt-8 w-fit">
-                    Learn More
+                  <TextLink href="#" className="mt-8 w-fit text-[14px]" arrowVariant="right">
+                    <span className="border-b border-[#00B4FD]/50 pb-[2px]">Learn</span>&nbsp;More
                   </TextLink>
                 </article>
               ))}
