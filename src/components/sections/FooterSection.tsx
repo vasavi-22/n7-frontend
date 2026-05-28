@@ -131,10 +131,10 @@ export function FooterSection() {
           </div>
         </div>
 
-        <p className="mt-19 text-[14px] leading-[1.6] text-[#B5C3CF]/45 ml-100">
-          Copyright © 2022 by Linktia Infosystems Limited — [CB7 and N7 as Commercial Brand] — [Registered under the
-          Companies Act 2006 in England and Wales | Number of Incoorporation 13100092]
-        </p>
+        <p className="mt-10 px-4 text-center text-[12px] leading-[1.7] text-[#B5C3CF]/45 sm:ml-auto sm:max-w-[700px] sm:px-0 sm:text-left sm:text-[14px]">
+  Copyright © 2022 by Linktia Infosystems Limited — [CB7 and N7 as Commercial Brand] — [Registered under the
+  Companies Act 2006 in England and Wales | Number of Incorporation 13100092]
+</p>
       </Container>
     </footer>
   );

@@ -16,7 +16,7 @@ export function SiteHeader({ navItems }: SiteHeaderProps) {
               N7
             </p>
 
-            <ul className="hidden items-center gap-5 md:flex">
+            <ul className="hidden items-center gap-5 sm:flex md:gap-5">
               {navItems.map((item) => (
                 <li key={item}>
                   <button

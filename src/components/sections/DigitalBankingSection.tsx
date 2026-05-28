@@ -124,7 +124,7 @@ export function DigitalBankingSection() {
           </div>
         </div>
       </Container>
-      <div className="bg-[#02171F] mt-20 rounded-[20px] mx-35 h-[380px]">
+      <div className="bg-[#02171F] mt-20 rounded-[20px] mx-4 sm:mx-8 lg:mx-35 min-h-[380px]">
       <Container>
         <div className="relative overflow-hidden rounded-[22px] p-[1.59px]">
 

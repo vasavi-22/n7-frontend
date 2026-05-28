@@ -19,7 +19,7 @@ export function HeroSection({ trustedBy }: HeroSectionProps) {
       <Container>
         <div className="grid items-center gap-16 lg:grid-cols-[1fr_1.08fr]">
           <section className="max-w-[560px] motion-safe:fade-up">
-            <h1 className="font-archivo text-[67px] leading-[1.12] font-medium text-[#E9F4F9] sm:text-[58px]">
+            <h1 className="font-archivo text-[42px] leading-[1.12] font-medium text-[#E9F4F9] sm:text-[45px] lg:text-[58px]">
               The new foundation
               <br />
               of modern banking
