@@ -10,8 +10,8 @@ export function SiteHeader({ navItems }: SiteHeaderProps) {
   return (
     <header className="mt-5">
       <Container>
-        <div className="mx-auto max-w-[1180px] rounded-[14px] border border-white/10 bg-gradient-to-r from-white/14 to-white/8 px-4 py-3 backdrop-blur-sm sm:px-6">
-          <nav className="flex items-center justify-between gap-3">
+        <div className="mx-auto max-w-[780px] rounded-[12px] border border-white/10 bg-gradient-to-r from-white/14 to-white/8 px-1 py-2 backdrop-blur-sm sm:px-6">
+          <nav className="flex items-center justify-between gap-2">
             <p className="font-[var(--font-archivo)] text-[24px] leading-[1.2] font-medium text-[#E9F4F9]">
               N7
             </p>
@@ -20,7 +20,7 @@ export function SiteHeader({ navItems }: SiteHeaderProps) {
               {navItems.map((item) => (
                 <li key={item}>
                   <button
-                    className="group inline-flex items-center gap-1.5 font-[var(--font-chivo-mono)] text-[12px] leading-[1.3] font-normal uppercase text-[#E9F4F9]/90 transition-colors hover:text-[#E9F4F9]"
+                    className="group inline-flex items-center gap-1.5 font-mono text-[12px] leading-[1.3] font-normal uppercase text-[#E9F4F9]/90 transition-colors hover:text-[#E9F4F9]"
                     type="button"
                   >
                     {item}
@@ -32,7 +32,7 @@ export function SiteHeader({ navItems }: SiteHeaderProps) {
               ))}
             </ul>
 
-            <Button intent="outline" className="rounded-[10px] px-5 py-2 sm:px-7" type="button">
+            <Button intent="outline" className="rounded-[6px] px-5 py-2 sm:px-7 w-44" type="button">
               Request Demo
             </Button>
           </nav>

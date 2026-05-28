@@ -25,10 +25,10 @@ function BenefitItem({ children }: { children: string }) {
         alt=""
         width={18}
         height={18}
-        className="mt-[2px] h-[18px] w-[18px] shrink-0"
+        className="mt-[2px] h-[31px] w-[30px] shrink-0"
         aria-hidden
       />
-      <span className="font-[var(--font-archivo)] text-[16px] leading-[1.3] text-[#B5C3CF]/90">
+      <span className="font-archivo text-[16px] leading-[1.3] text-[#B5C3CF]/90">
         {children}
       </span>
     </li>
@@ -37,23 +37,24 @@ function BenefitItem({ children }: { children: string }) {
 
 export function BenefitsSection() {
   return (
-    <section className="relative mt-20 lg:mt-28">
+    <section className="relative mt-20 mb-35 lg:mt-35">
       <Container>
-        <div className="grid items-center gap-12 lg:gap-20 lg:grid-cols-[1.08fr_1fr]">
+        <div className="grid items-center gap-12 lg:gap-28 lg:grid-cols-[1.08fr_1fr]">
           <div className="order-2 lg:order-1 motion-safe:fade-up overflow-hidden">
-            <LaptopFrame
+          <Image
               src="/sections/laptop-kyc.png"
               alt="Operations dashboard screen"
-              cutoff="left"
-              variant="thin"
+              width={500}
+              height={400}
+              className="w-[92%] h-auto"
             />
           </div>
 
           <div className="order-1 lg:order-2 max-w-[560px] motion-safe:fade-up [animation-delay:120ms]">
-            <h2 className="font-[var(--font-archivo)] text-[27px] leading-[1.3] font-normal text-[#E9F4F9] sm:text-[30px]">
+            <h2 className="font-archivo text-[27px] leading-[1.3] font-normal text-[#E9F4F9] sm:text-[30px]">
               Run a more efficient, flexible,and digitally connected corebanking system
             </h2>
-            <p className="mt-7 font-[var(--font-archivo)] text-[16px] leading-[1.3] font-normal text-[#E9F4F9]/85">
+            <p className="mt-7 font-archivo text-[16px] leading-[1.3] font-normal text-[#E9F4F9]/85">
               What you will get:
             </p>
 

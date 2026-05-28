@@ -6,7 +6,7 @@ export function CaseStudiesSection() {
   return (
     <section className="relative py-18 pb-24">
       <Container>
-        <h2 className="text-center font-[var(--font-archivo)] text-[36px] leading-[1.2] font-normal text-[#E9F4F9]">
+        <h2 className="text-center font-archivo text-[45px] leading-[1.2] font-normal text-[#E9F4F9]">
           Our Case Studies
         </h2>
 
@@ -31,8 +31,8 @@ export function CaseStudiesSection() {
             </div>
 
             <div className="max-w-[520px]">
-              <p className="text-[10px] tracking-[0.18em] text-[#00B4FD]/55">GETTING STARTED</p>
-              <h3 className="mt-4 font-[var(--font-archivo)] text-[34px] leading-[1.15] font-normal text-[#E9F4F9]">
+              <p className="text-[12px] font-mono tracking-[0.18em] text-[#00B4FD]/55">GETTING STARTED</p>
+              <h3 className="mt-4 font-archivo text-[34px] leading-[1.15] font-normal text-[#E9F4F9]">
                 How we help brand
                 <br />
                 reach out to more
@@ -48,7 +48,7 @@ export function CaseStudiesSection() {
                   height={24}
                   className="h-6 w-6"
                 />
-                <span>Zoomerr</span>
+                <span className="text-[20px]">Zoomerr</span>
               </div>
 
               <button
@@ -60,7 +60,9 @@ export function CaseStudiesSection() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-4 pb-9">
+        </div>
+        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center gap-4 pb-9 mt-7">
             <button
               type="button"
               className="grid h-10 w-10 place-items-center rounded-full border border-[#00B4FD]/35 text-[#00B4FD]/80 transition-colors hover:bg-white/10"
@@ -83,9 +85,9 @@ export function CaseStudiesSection() {
             </button>
           </div>
 
-          <div className="absolute bottom-8 right-10 hidden lg:block">
-            <TextLink href="#" className="text-[#00B4FD] border-[#00B4FD]/40">
-              View All →
+          <div className="absolute right-32 hidden lg:block">
+            <TextLink href="#" className="mt-8 w-fit text-[14px]" arrowVariant="right">
+              <span className="border-b border-[#00B4FD]/50 pb-[2px] font-mono">VIEW</span>&nbsp;ALL
             </TextLink>
           </div>
         </div>

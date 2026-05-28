@@ -13,7 +13,7 @@ type InsightCardProps = {
 function InsightCard({ title, author, date, withImage }: InsightCardProps) {
   return (
     <article className="rounded-[18px] border border-white/10 bg-white/[0.03] p-6 shadow-[0_18px_60px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:-translate-y-1">
-      <p className="text-[10px] tracking-[0.18em] text-[#00B4FD]/55">GETTING STARTED</p>
+      <p className="font-mono text-[10px] tracking-[0.18em] text-[#00B4FD]/55">GETTING STARTED</p>
 
       <div className="mt-4 grid gap-5">
         {withImage ? (
@@ -35,20 +35,19 @@ function InsightCard({ title, author, date, withImage }: InsightCardProps) {
         ) : null}
 
         <div>
-          <h3 className="font-[var(--font-archivo)] text-[22px] leading-[1.2] font-normal text-[#E9F4F9]">
+          <h3 className="font-archivo text-[22px] leading-[1.2] font-normal text-[#E9F4F9]">
             {title}
           </h3>
           <div className="mt-3 flex items-center gap-3 text-[11px] text-[#B5C3CF]/70">
-            <span>{author}</span>
-            <span className="h-[3px] w-[3px] rounded-full bg-[#B5C3CF]/40" />
-            <span>{date}</span>
+            <span className="font-archivo text-[14px] tracking-[0.18em] text-[#64A8C4]/55">{author}</span>
+            <span className="font-archivo text-[14px] tracking-[0.18em] text-[#64A8C4]/55">{date}</span>
           </div>
         </div>
 
         <Button
           intent="outline"
           type="button"
-          className="h-[40px] w-full rounded-[12px] border-white/15 text-[11px] text-[#B5C3CF]/80 hover:text-[#E9F4F9]"
+          className="font-mono h-[40px] w-full mt-7 rounded-[12px] border-white/15 text-[11px] text-[#B5C3CF]/80 hover:text-[#E9F4F9]"
         >
           Read More
         </Button>
@@ -62,16 +61,16 @@ export function InsightsSection() {
     <section className="relative py-20">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[1fr_1.25fr] lg:items-start">
-          <div className="max-w-[420px] motion-safe:fade-up">
-            <h2 className="font-[var(--font-archivo)] text-[40px] leading-[1.1] font-normal text-[#E9F4F9]">
+          <div className="max-w-[520px] motion-safe:fade-up">
+            <h2 className="font-archivo text-[40px] leading-[1.1] font-normal text-[#E9F4F9]">
               Get yourself up-to-speed on
               <br />
               all the things happening in
               <br />
               fintech
             </h2>
-            <div className="mt-8">
-              <Button intent="outline" type="button" className="h-[44px] w-[174px] rounded-[10px]">
+            <div className="mt-10">
+              <Button intent="outline" type="button" className="h-[49px] w-[184px] rounded-[10px]">
                 Insights
               </Button>
             </div>
@@ -98,8 +97,8 @@ export function InsightsSection() {
             />
 
             <div className="md:col-span-2 flex justify-end pt-2">
-              <TextLink href="#" className="text-[#00B4FD] border-[#00B4FD]/40">
-                Read All Insights
+              <TextLink href="#" className="mt-8 w-fit text-[14px]" arrowVariant="right">
+                  <span className="border-b border-[#00B4FD]/50 pb-[2px] font-mono">READ</span>&nbsp;ALL INSIGHTS
               </TextLink>
             </div>
           </div>

@@ -16,12 +16,12 @@ type SolutionsSectionProps = {
 
 export function SolutionsSection({ solutions }: SolutionsSectionProps) {
   return (
-    <section className="relative mt-16 lg:mt-24">
+    <section className="relative mt-19 mb-24 lg:mt-35">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[433px_minmax(0,613.0121459960938px)] lg:items-start lg:justify-between">
           <div className="lg:sticky lg:top-8 lg:h-[185px] motion-safe:fade-up">
             <div className="flex w-full max-w-[433px] flex-col gap-12">
-              <h2 className="font-[var(--font-archivo)] text-[37px] leading-[1.2] font-normal tracking-[-0.01em] text-[#E9F4F9]">
+              <h2 className="font-archivo text-[37px] leading-[1.2] font-normal tracking-[-0.01em] text-[#E9F4F9]">
                 All of our solutions are
                 <br />
                 tailor-made to your needs
@@ -29,7 +29,7 @@ export function SolutionsSection({ solutions }: SolutionsSectionProps) {
               <Button
                 intent="outline"
                 type="button"
-                className="h-[49px] w-[226px] rounded-[10px] px-[59px] py-[15px]"
+                className="h-[49px] w-[226px] rounded-[10px] px-[55px] py-[15px] text-[15px]"
               >
                 Request Demo
               </Button>
@@ -55,21 +55,21 @@ export function SolutionsSection({ solutions }: SolutionsSectionProps) {
                       className="h-[50px] w-[50px] shrink-0"
                     />
                     {item.badge ? (
-                      <span className="font-[var(--font-chivo-mono)] text-[20px] leading-none text-[#596E84]">
+                      <span className="font-mono text-[20px] leading-none text-[#596E84]">
                         {item.badge}
                       </span>
                     ) : null}
                   </div>
 
-                  <h3 className="mt-3 font-[var(--font-archivo)] text-[22px] leading-[1.25] font-normal text-[#E9F4F9]">
+                  <h3 className="mt-5 font-archivo text-[22px] leading-[1.25] font-normal text-[#E9F4F9]">
                     {item.title}
                   </h3>
-                  <p className="mt-4 font-[var(--font-archivo)] text-[16px] leading-[1.3] font-normal text-[#B5C3CF]/90">
+                  <p className="mt-6 font-archivo text-[16px] leading-[1.3] font-normal text-[#B5C3CF]/90">
                     {item.description}
                   </p>
 
                   <TextLink href="#" className="mt-8 w-fit text-[14px]" arrowVariant="right">
-                    <span className="border-b border-[#00B4FD]/50 pb-[2px]">Learn</span>&nbsp;More
+                    <span className="border-b border-[#00B4FD]/50 pb-[2px] font-mono">Learn</span>&nbsp;More
                   </TextLink>
                 </article>
               ))}

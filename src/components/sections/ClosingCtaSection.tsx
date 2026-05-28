@@ -7,13 +7,6 @@ export function ClosingCtaSection() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-[380px] bg-[radial-gradient(closest-side,rgba(0,180,253,0.12),rgba(0,0,0,0))]" />
       <Container>
         <div className="relative overflow-hidden rounded-[22px] p-[1.59px]">
-          <div
-            className="absolute inset-0 rounded-[22px]"
-            style={{
-              background:
-                "linear-gradient(106.53deg, #00B4FD -5.68%, #003ACE 86.98%), linear-gradient(32.64deg, #02171F 30.8%, rgba(0, 0, 0, 0) 77.46%)",
-            }}
-          />
 
           <div
             className="relative rounded-[20px] px-7 py-12 sm:px-10 lg:px-14 lg:py-16"
@@ -30,12 +23,12 @@ export function ClosingCtaSection() {
 
             <div className="relative grid gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
               <div className="max-w-[520px] motion-safe:fade-up">
-                <h2 className="font-[var(--font-archivo)] text-[40px] leading-[1.12] font-normal text-[#E9F4F9] sm:text-[48px]">
+                <h2 className="font-archivo text-[40px] leading-[1.12] font-normal text-[#E9F4F9] sm:text-[48px]">
                   Take the full advantage of
                   <br />
                   going paper-less now.
                 </h2>
-                <p className="mt-6 max-w-[520px] font-[var(--font-archivo)] text-[14px] leading-[1.45] text-[#B5C3CF]/90">
+                <p className="mt-6 max-w-[520px] font-archivo text-[14px] leading-[1.45] text-[#B5C3CF]/90">
                   CB7 helps your financial institution improve the client experience, automate and
                   optimize procedures, simplify banking operations
                 </p>

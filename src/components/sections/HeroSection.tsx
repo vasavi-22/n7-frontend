@@ -15,16 +15,16 @@ type HeroSectionProps = {
 
 export function HeroSection({ trustedBy }: HeroSectionProps) {
   return (
-    <main className="relative mt-14 overflow-visible lg:mt-20">
+    <main className="relative mt-14 mb-35 overflow-visible lg:mt-20">
       <Container>
         <div className="grid items-center gap-16 lg:grid-cols-[1fr_1.08fr]">
           <section className="max-w-[560px] motion-safe:fade-up">
-            <h1 className="font-[var(--font-archivo)] text-[46px] leading-[1.12] font-medium text-[#E9F4F9] sm:text-[58px]">
+            <h1 className="font-archivo text-[67px] leading-[1.12] font-medium text-[#E9F4F9] sm:text-[58px]">
               The new foundation
               <br />
               of modern banking
             </h1>
-            <p className="mt-5 max-w-[520px] font-[var(--font-archivo)] text-[14px] leading-[1.55] font-normal text-[#E9F4F9]/70">
+            <p className="mt-5 max-w-[520px] font-archivo text-[16px] leading-[1.55] font-normal text-[#E9F4F9]/70">
               We drive innovation and growth, provide seamless
               <br />
               customer experience and operational excellence
@@ -56,111 +56,22 @@ export function HeroSection({ trustedBy }: HeroSectionProps) {
                   background: "linear-gradient(103.43deg, #00B4FD -1.02%, #003ACE 83.53%)",
                 }}
               />
-              <div className="absolute left-[14%] top-[5%] h-[91%] w-[62%] overflow-hidden rounded-[31px]">
+              <div className="absolute left-[1%] top-[5%] h-[98%] w-[100%] overflow-hidden rounded-[31px]">
                 <Image
-                  src="/hero-woman.png"
+                  src="/sections/hero_women1.png"
                   alt="Woman using phone and laptop"
                   width={768}
                   height={512}
                   priority
-                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.02]"
+                  className="h-full w-full object-contain transition-transform duration-500"
                 />
               </div>
-
-              <article className="absolute right-[1.5%] top-[4%] w-[39%] rounded-[18px] border border-white/25 bg-[#ECECEC]/78 px-4 py-4 shadow-[0_14px_45px_rgba(0,0,0,0.22),0_0_0_2px_rgba(255,255,255,0.16)] backdrop-blur-md sm:px-5 sm:py-4">
-                <div className="flex items-start justify-between">
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src="/sections/toni-profile.png"
-                      alt="Toni Kross"
-                      width={32}
-                      height={32}
-                      className="h-8 w-8 rounded-full object-cover"
-                    />
-                    <div>
-                      <p className="whitespace-nowrap font-[var(--font-archivo)] text-[15px] font-medium text-[#1F1F1F]">
-                        Toni Kross
-                      </p>
-                      <p className="font-[var(--font-archivo)] text-[10px] text-[#7B7B7B]">
-                        Good Morning
-                      </p>
-                    </div>
-                  </div>
-                  <BellIcon className="h-5 w-5 text-[#262626]" />
-                </div>
-                <p className="mt-3 font-[var(--font-archivo)] text-[10px] text-[#7B7B7B]">Total Balance</p>
-                <p className="font-[var(--font-archivo)] text-[clamp(18px,2vw,34px)] leading-tight font-medium text-[#081E69]">
-                  $42,295.00 USD
-                </p>
-                <div className="mt-4 grid grid-cols-3 gap-3 text-center">
-                  <div className="space-y-2">
-                    <span className="mx-auto grid h-9 w-9 place-content-center rounded-[12px] bg-[#E4E4E4] sm:h-11 sm:w-11">
-                      <CameraIcon className="h-4 w-4 text-[#1A1A1A] sm:h-5 sm:w-5" />
-                    </span>
-                    <p className="whitespace-nowrap font-[var(--font-chivo-mono)] text-[8px] text-[#111] sm:text-[10px]">
-                      Fund Transfer
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <span className="mx-auto grid h-9 w-9 place-content-center rounded-[12px] bg-[#E4E4E4] sm:h-11 sm:w-11">
-                      <WalletIcon className="h-4 w-4 text-[#1A1A1A] sm:h-5 sm:w-5" />
-                    </span>
-                    <p className="whitespace-nowrap font-[var(--font-chivo-mono)] text-[8px] text-[#111] sm:text-[10px]">
-                      Add Money
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <span className="mx-auto grid h-9 w-9 place-content-center rounded-[12px] bg-[#E4E4E4] sm:h-11 sm:w-11">
-                      <Squares2X2Icon className="h-4 w-4 text-[#1A1A1A] sm:h-5 sm:w-5" />
-                    </span>
-                    <p className="whitespace-nowrap font-[var(--font-chivo-mono)] text-[8px] text-[#111] sm:text-[10px]">
-                      More
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <article className="absolute bottom-[6%] left-[0%] w-[41%] rounded-[14px] border border-white/30 bg-[#F2F2F2]/82 px-3 py-3 shadow-[0_14px_45px_rgba(0,0,0,0.2),0_0_0_2px_rgba(255,255,255,0.16)] backdrop-blur-md sm:px-4 sm:py-3">
-                <p className="font-[var(--font-archivo)] text-[clamp(18px,1.8vw,26px)] font-medium leading-tight text-[#161616]">
-                  Recent activity
-                </p>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  <span className="rounded-full bg-[#ECECEC] px-2.5 py-1 font-[var(--font-archivo)] text-[10px] text-[#606060]">
-                    This Day
-                  </span>
-                  <span className="rounded-full bg-[#081E69] px-2.5 py-1 font-[var(--font-archivo)] text-[10px] text-white">
-                    This Week
-                  </span>
-                  <span className="rounded-full bg-[#ECECEC] px-2.5 py-1 font-[var(--font-archivo)] text-[10px] text-[#606060]">
-                    This Month
-                  </span>
-                  <span className="rounded-full bg-[#ECECEC] px-2.5 py-1 font-[var(--font-archivo)] text-[10px] text-[#606060]">
-                    6 Month
-                  </span>
-                </div>
-                <div className="mt-3 flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <span className="grid h-8 w-8 place-content-center rounded-[9px] bg-[#7A66FF]">
-                      <ArrowUpRightIcon className="h-4 w-4 text-white" />
-                    </span>
-                    <div>
-                      <p className="whitespace-nowrap font-[var(--font-archivo)] text-[14px] font-medium text-[#111]">
-                        To Jin <span className="text-[#6B6B6B]">- Work</span>
-                      </p>
-                      <p className="font-[var(--font-archivo)] text-[10px] text-[#838383]">12 jun 2022</p>
-                    </div>
-                  </div>
-                  <p className="whitespace-nowrap font-[var(--font-chivo-mono)] text-[24px] leading-none text-[#161616]">
-                    -$59
-                  </p>
-                </div>
-              </article>
             </div>
           </section>
         </div>
 
         <div className="mt-10 motion-safe:fade-up [animation-delay:240ms]">
-          <p className="font-[var(--font-archivo)] text-[12px] leading-[1.3] font-medium text-[#E9F4F9]/80">
+          <p className="font-archivo text-[16px] leading-[1.3] font-medium text-[#E9F4F9]/80">
             Trusted By:
           </p>
           <div className="mt-3 flex w-full flex-wrap items-center gap-x-6 gap-y-2">
